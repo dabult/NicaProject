@@ -1,0 +1,101 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+p{
+text-indent: 1em;
+}
+
+.tablink {
+  background-color: white;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 60px;
+  font-size: 200%;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: lightblue;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  min-height: 100%;
+  margin: 0;
+}
+
+.tabcontent p::selection, .tabcontent h1::selection, button::selection, .tabcontent h2::selection {
+  color: black;
+  background-color: lime;
+}
+
+.tabcontent p, li {
+  font-size: 20px;
+}
+
+.tabcontent h1 {
+  font-size: 45px;
+}
+
+#Home {
+  background-color: #007ed8;
+}
+
+#Home h2{
+text-align: center;
+}
+
+#Protest {
+  background-color: #007ed8;
+}
+
+#History {
+  background-color: #007ed8;
+}
+
+#Sources {
+  background-color: #007ed8;
+}
+
+.images img {
+  width: 24%;
+  object-fit: cover;
+  height: 25vh;
+  margin: 0;
+}
+
+.tabcontent a{
+color: white;
+text-decoration: none;
+line-height: 1.5em;
+}
+
+.tabcontent a:hover{
+text-decoration: underline;
+}
+
+.tabcontent a:visited{
+color: silver;
+}
+
+
+@media (max-width: 500px) {
+  .tablink {
+    font-size: 20px;
+  }
+  .images img {
+    width: 49%;
+    height: 25%;
+    object-fit: cover;
+    margin: 0;
+}
+}
